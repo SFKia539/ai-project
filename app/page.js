@@ -46,42 +46,44 @@ export default function Home() {
   // TODO make into a card for p and rember not to touch the api/ route
   return (
     <>
-      <div className="lg:w-1/2 2x1:w-1/3 p-8 rounded-md bg-black text-cyan-400 text-center">
-        <h1 className="text-3xl font-bold md-6">Welcome to SENTINEL X</h1>
-        <div id="resultContainer" className="mt-4 h-48 overflow-y-auto">
-          <p className="bg-cyan-400 text-black text-sm md-2">
-            What can i help you with
-          </p>
-          <p id="resultText" className="whitespace-pre-line">
-            {result}
-          </p>
-        </div>
-        <input
-          type="text"
-          value={prompt}
-          id="promptInput"
-          onChange={(e) => setPrompt(e.target.value)}
-          className="w-full px-4 py-2 rounded-3xl bg-black placeholder-slate-50"
-          placeholder="Enter Your question here"
-        />
+      <div className="flex flexbox justify-center">
+        <div className="lg:w-1/2 2x1:w-1/3 p-8 rounded-md bg-black text-cyan-400 text-center">
+          <h1 className="text-3xl font-bold md-6">Welcome to SENTINEL X</h1>
+          <div id="resultContainer" className="mt-4 h-48 overflow-y-auto">
+            <p className="bg-cyan-400 text-black text-lg md-2">
+              Hi what can i help you with
+            </p>
+            <p id="resultText" className="whitespace-pre-line">
+              {result}
+            </p>
+          </div>
+          <input
+            type="text"
+            value={prompt}
+            id="promptInput"
+            onChange={(e) => setPrompt(e.target.value)}
+            className="w-full px-4 py-2 rounded-3xl bg-black placeholder-slate-50"
+            placeholder="Enter Your question here"
+          />
 
-        <div className="flex justify-center mt-4">
-          <button
-            onClick={handleGenerate}
-            disabled={isGenerating}
-            id="generateBtn"
-            className="w-1/2 px-4 py-2 rounded-2xl placeholder-white hover: bg-slate-500"
-          >
-            {isGenerating ? "Generating..." : "Generate"}
-          </button>
-          <button
-            onClick={() => setPrompt("")}
-            id="stopBtn"
-            disabled=""
-            className="w-1/2 px-4 py-2 rounded-2xl bg-white border-white text-cyan-400"
-          >
-            stop
-          </button>
+          <div className="flex justify-center mt-4">
+            <button
+              onClick={handleGenerate}
+              disabled={isGenerating}
+              id="generateBtn"
+              className="w-1/2 px-4 py-2 rounded-2xl placeholder-white hover: bg-slate-500"
+            >
+              {isGenerating ? "Generating..." : "Generate"}
+            </button>
+            <button
+              onClick={() => setPrompt("")}
+              id="stopBtn"
+              disabled=""
+              className="w-1/2 px-4 py-2 rounded-2xl bg-white border-white text-cyan-400"
+            >
+              stop
+            </button>
+          </div>
         </div>
       </div>
     </>
