@@ -17,17 +17,17 @@ export default function myGallery() {
         <img
           className="border-4 border-gray-800"
           src="/images/IMG_0276.png"
-          alt="Norris Point night time"
+          alt="Fishery rd turning night"
         />
         <img
           className="border-4 border-gray-800"
           src="/images/IMG_0286.png"
-          alt="Norris Point night time"
+          alt="Fishery rd night time"
         />
         <img
           className="border-4 border-gray-800"
           src="/images/IMG_0283.png"
-          alt="Norris Point night time"
+          alt="Fishery rd night time"
         />
         <img
           className="border-4 border-gray-800"
@@ -47,12 +47,12 @@ export default function myGallery() {
         <img
           className="border-4 border-gray-800"
           src="/images/IMG_0316.png"
-          alt="Norris Point night time"
+          alt="Rocky Harbour during lowtide"
         />
         <img
           className="border-4 border-gray-800"
           src="/images/IMG_0322.png"
-          alt="Norris Point night time"
+          alt="Rocky Harbour during lowtide"
         />
       </div>
     </div>
